@@ -1,5 +1,10 @@
 package Question;
 
+/**
+ * Method replaces the spaces with '%20' in order to make a URl of it. The output of below method is:
+         * this%20is%20my%20request
+         * Mr%20John%20Smith
+ */
 public class ReplaceCharactersForURL1_3 {
 
     public static void main(String[] args) {
