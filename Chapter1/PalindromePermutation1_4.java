@@ -1,4 +1,4 @@
-package Question;
+package Chapter1;
 
 /**
  * Program for checking whether any permutation of a string is a palindrome. The output of the program is:
@@ -11,18 +11,18 @@ package Question;
        * Is 'tata' palindrome permutation: true
        * Is 'race car' palindrome permutation: true
  */
-public class PalindromePermutation {
+public class PalindromePermutation1_4 {
 
   public static void main(String[] args) {
-    PalindromePermutation palindromePermutation = new PalindromePermutation();
-    System.out.println("Is 'Tact Coa' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("Tact Coa"));
-    System.out.println("Is 'Tact Coat' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("Tact Coat"));
-    System.out.println("Is 'aabbcbbaad' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("aabbcbbaad"));
-    System.out.println("Is 'civic' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("civic"));
-    System.out.println("Is 'civil' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("civil"));
-    System.out.println("Is 'civil' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("civil"));
-    System.out.println("Is 'tata' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("tata"));
-    System.out.println("Is 'race car' palindrome permutation: "+palindromePermutation.isPermutationOfPalindrome("race car"));
+    PalindromePermutation1_4 palindromePermutation14 = new PalindromePermutation1_4();
+    System.out.println("Is 'Tact Coa' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("Tact Coa"));
+    System.out.println("Is 'Tact Coat' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("Tact Coat"));
+    System.out.println("Is 'aabbcbbaad' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("aabbcbbaad"));
+    System.out.println("Is 'civic' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("civic"));
+    System.out.println("Is 'civil' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("civil"));
+    System.out.println("Is 'civil' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("civil"));
+    System.out.println("Is 'tata' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("tata"));
+    System.out.println("Is 'race car' palindrome permutation: "+ palindromePermutation14.isPermutationOfPalindrome("race car"));
 
   }
 

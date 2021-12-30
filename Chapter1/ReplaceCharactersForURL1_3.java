@@ -1,4 +1,4 @@
-package Question;
+package Chapter1;
 
 /**
  * Method replaces the spaces with '%20' in order to make a URl of it. The output of below method is:
