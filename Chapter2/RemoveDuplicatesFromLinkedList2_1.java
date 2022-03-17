@@ -2,16 +2,25 @@ package Chapter2;
 
 /**
  * Solution for Question 2.1 for removing duplicates from single linked list.
-         * The linked list having duplicates
-         * 13 -> 4 -> 1 -> 6 -> 7 -> 6 -> 12 -> 1 ->
-         * ----Removing the duplicates using extra SET data structure-----
-         * Duplicate node found 6, removing it
-         * Duplicate node found 1, removing it
-         * The linked list without duplicates
-         * 13 -> 4 -> 1 -> 6 -> 7 -> 12 ->
-         * -----Removing the duplicates without extra buffer----
-         * The linked list without duplicates
-         * 13 -> 4 -> 1 -> 6 -> 7 -> 12 ->
+     * The linked list having duplicates
+     * The Linked list representation::: 13 -> 4 -> 1 -> 6 -> 7 -> 6 -> 12 -> 1 ->
+     * ----Removing the duplicates using extra SET data structure-----
+     * Duplicate node found 6, removing it
+     * Duplicate node found 1, removing it
+     * The linked list without duplicates
+     * The Linked list representation::: 13 -> 4 -> 1 -> 6 -> 7 -> 12 ->
+     * -----Removing the duplicates without extra buffer----
+     * The linked list without duplicates
+     * The Linked list representation::: 13 -> 4 -> 1 -> 6 -> 7 -> 12 ->
+     * The linked list having duplicates
+     * The Linked list representation::: deer -> pooh -> cat -> tiger -> bat -> mat -> cat ->
+     * ----Removing the duplicates using extra SET data structure-----
+     * Duplicate node found cat, removing it
+     * The linked list without duplicates
+     * The Linked list representation::: deer -> pooh -> cat -> tiger -> bat -> mat ->
+     * -----Removing the duplicates without extra buffer----
+     * The linked list without duplicates
+     * The Linked list representation::: deer -> pooh -> cat -> tiger -> bat -> mat ->
  */
 public class RemoveDuplicatesFromLinkedList2_1 {
 
@@ -35,5 +44,24 @@ public class RemoveDuplicatesFromLinkedList2_1 {
         ll.removeDuplicatesWithoutBuffer();
         System.out.println("The linked list without duplicates");
         ll.traverse();
+        LinkedList<String> llString = new LinkedList<>();
+        llString.addNode("cat");
+        llString.addNode("mat");
+        llString.addNode("bat");
+        llString.addNode("tiger");
+        llString.addNode("cat");
+        llString.addNode("pooh");
+        llString.addNode("deer");
+
+        System.out.println("The linked list having duplicates");
+        llString.traverse();
+        System.out.println("----Removing the duplicates using extra SET data structure-----");
+        llString.removeDuplicates();
+        System.out.println("The linked list without duplicates");
+        llString.traverse();
+        System.out.println("-----Removing the duplicates without extra buffer----");
+        llString.removeDuplicatesWithoutBuffer();
+        System.out.println("The linked list without duplicates");
+        llString.traverse();
     }
 }
